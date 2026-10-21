@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафе Діана у Броварах - Про нас</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-gray-100 font-sans">
+    <header class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-neutral-800 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-amber-500">Кафе Діана</a>
+            <nav class="hidden md:flex space-x-2">
+                <a href="index.html" class="hover:bg-neutral-800 text-gray-300 rounded-lg px-4 py-2 font-medium transition">Головна</a>
+                <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 font-medium">Про нас</a>
+                <a href="services.html" class="hover:bg-neutral-800 text-gray-300 rounded-lg px-4 py-2 font-medium transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-neutral-800 text-gray-300 rounded-lg px-4 py-2 font-medium transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-neutral-800 text-gray-300 rounded-lg px-4 py-2 font-medium transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-neutral-800 text-gray-300 rounded-lg px-4 py-2 font-medium transition">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="mb-12 text-sm text-gray-400">
+            Головна > Про нас > [поточна]
+        </div>
+
+        <h1 class="text-4xl font-bold text-amber-500 mb-8">Про кафе «Діана»</h1>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+            <div class="space-y-4 text-gray-300 leading-relaxed">
+                <p>Кафе «Діана» — це затишний заклад у місті Бровари, розташований за адресою вулиця Олега Онікієнка, 125. Заклад ідеально підходить як для звичайного сімейного обіду чи дружньої вечері, так і для святкування важливих подій, днів народжень та банкетів. На території кафе на гостей чекають затишні окремі будиночки та тераси для відпочинку на свіжому повітрі.</p>
+                <p>Основу меню закладу становлять популярні страви кавказької та української кухні. Найбільшу популярність серед відвідувачів здобули фірмові страви на мангалі та грилі: соковитий шашлик, ароматний люля-кебаб, страви з риби, а також різноманітні свіжі салати та ситні порції. Тут кожен гість знайде страви до смаку.</p>
+                <p>Команда кафе дбає про те, щоб атмосфера сприяла приємному відпочинку, а страви готувалися зі свіжих інгредієнтів. Завітайте до «Діани», щоб насолодитися смачною їжею, провести час у затишній обстановці з близькими та насолодитися гостинністю закладу.</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Інтер'єр кафе" class="rounded-2xl shadow-xl w-full object-cover h-[400px]">
+            </div>
+        </div>
+
+        <div class="bg-neutral-800 border border-neutral-700 rounded-2xl p-8">
+            <h2 class="text-2xl font-bold text-amber-500 mb-6">Чому обирають нас</h2>
+            <ul class="space-y-4 text-gray-300">
+                <li class="flex items-start">
+                    <span class="text-amber-500 mr-3 text-xl">✓</span>
+                    Наявність окремих будиночків та терас для приватного відпочинку та банкетів
+                </li>
+                <li class="flex items-start">
+                    <span class="text-amber-500 mr-3 text-xl">✓</span>
+                    Спеціалізація на стравах кавказької та української кухні на мангалі
+                </li>
+                <li class="flex items-start">
+                    <span class="text-amber-500 mr-3 text-xl">✓</span>
+                    Великі та ситні порції для сімейних свят і компаній
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="bg-neutral-950 text-gray-400 py-12 border-t border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4 text-amber-500">Кафе «Діана»</h3>
+                <p class="text-sm">Затишне місце у Броварах для вашого відпочинку та свят.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p class="text-sm mb-2">вулиця Олега Онікієнка, 125, Бровари</p>
+                <p class="text-sm mb-2">Телефон: +380685975880</p>
+                <p class="text-sm">Email: info@kafe-diana.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Години роботи</h3>
+                <p class="text-sm mb-2">Пн-Нд: 10:00 - 22:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
